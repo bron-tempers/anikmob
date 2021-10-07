@@ -1,0 +1,161 @@
+/* ==== ==== ==== ==== ==== */
+.header {
+    height: calc(100vh - 100px);
+    margin: 50px;
+
+    position: relative;
+    z-index: 100;
+
+    background: $header-back;
+    border-radius: 30px;
+
+    &::after {
+        content: "";
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 200;
+
+        background-image: url("../img/header__mask_group.png");
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+// navbar
+.navbar {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 3rem;
+
+    position: relative;
+    z-index: 300;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2.1em;
+    font-weight: 700;
+    line-height: 31 / 21 * 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $white-font;
+}
+
+.nav-menu {
+    flex: 1 1 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__list {
+        padding-right: 11rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4.5rem;
+    }
+
+    &__link {
+        font-size: 2.1em;
+        font-weight: 400;
+        line-height: 31 / 21 * 100%;
+        color: $white-font;
+        opacity: 0.6;
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    &__purchase-button {
+        border: none;
+        padding: 1.5rem 3rem;
+
+        border-radius: 6px;
+        background-color: $button-back;
+
+        font-size: 2.1em;
+        line-height: 31 / 21 * 100%;
+        color: $button-font;
+    }
+
+}
+
+.menu-button {
+    display: none;
+}
+
+// hero 
+.hero {
+    height: calc(100vh - 190px);
+    padding-bottom: 3rem;
+
+    position: relative;
+    z-index: 300;
+
+    background-image: url("../files/image/header__phone.png");
+    background-position: 100% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__content {
+        max-width: 1140px;
+        height: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__text-content {
+        max-width: 55.5rem;
+    }
+
+    &__heading {
+        margin-bottom: 1.8rem;
+
+        opacity: 0.9;
+
+        font-size: 6.8em;
+        font-weight: 700;
+        line-height: 82 / 68 * 100%;
+        color: $white-font;
+    }
+
+    &__paragraph {
+        max-width: 48.7rem;
+        margin-bottom: 4rem;
+
+        opacity: 0.8;
+
+        font-size: 1.8em;
+        font-weight: 400;
+        line-height: 160%;
+        color: $white-font;
+
+    }
+
+    &__purchase-button {
+        border: none;
+        padding: 1.6rem 4.8rem;
+
+        background-color: $button-back;
+        border-radius: 6px;
+
+        font-size: 2.1em;
+        font-weight: 500;
+        line-height: 31 / 21 * 100%;
+        color: $button-font;
+    }
+}
