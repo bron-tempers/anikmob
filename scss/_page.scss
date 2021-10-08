@@ -183,3 +183,64 @@
         opacity: 0.7;
     } 
 }
+
+/* ==== ==== ==== ==== ==== */
+.product {
+    padding-bottom: 19rem;
+
+    &__content {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        margin-bottom: 6.7rem;
+
+        font-size: 5.1em;
+        font-weight: 700;
+        line-height: 130%;
+        text-align: center;
+        color: $main-font;
+    }
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.5rem;
+
+    &__item {
+        flex: 1 1 25%;
+    }
+}
+
+.product-card {
+
+    &__image {
+        width: 10rem;
+        height: 10rem;
+
+        margin-bottom: 2rem;
+    }
+
+    &__vector {
+        height: 100%;
+        object-position: 0 50%;
+        object-fit: contain;
+    }
+
+    &__heading {
+        margin-bottom: 1.3rem;
+
+        font-size: 2.1em;
+        font-weight: 500;
+        color: $main-font;
+    }
+
+    &__paragraph {
+        font-size: 1.6em;
+        line-height: 160%;
+        color: $main-font;
+    }
+}
