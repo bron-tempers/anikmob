@@ -244,3 +244,61 @@
         color: $main-font;
     }
 }
+
+/* ==== ==== ==== ==== ==== */
+.about {
+    background-color: $about-back;
+
+    &__content {
+        max-width: 1140px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__picture {
+
+        width: 41.2rem;
+        position: relative;
+    }
+
+    &__image {
+        height: 58.8rem;
+        width: 41.2rem;
+
+        position: absolute;
+        bottom: 0;
+        left: -7rem;
+
+    }
+
+    &__text-content {
+        max-width: 51.2rem;
+        height: 51.6rem;
+
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    &__heading {
+        margin-bottom: 3rem;
+
+        opacity: 0.9;
+
+        font-size: 5.1em;
+        font-weight: 700;
+        line-height: 130%;
+        color: $white-font;
+    }
+
+    &__paragraph {
+        font-size: 1.6em;
+        line-height: 160%;
+        color: $white-font;
+
+        opacity: 0.7;
+    }
+}
