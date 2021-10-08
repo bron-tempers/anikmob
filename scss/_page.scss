@@ -430,7 +430,7 @@
             width: 77%;
 
             top: -7rem;
-            z-index: 20;
+            z-index: -1;
             
             
             opacity: 0.03;
@@ -440,7 +440,7 @@
             width: 87%;
 
             top: -3.5rem;
-            z-index: 30;
+            z-index: -1;
 
             opacity: 0.1;
         }
@@ -449,6 +449,9 @@
     &__text-content {
         max-width: 48rem;
         text-align: center;
+
+        position: relative;
+        z-index: 100;
     }
 
     &__heading {
