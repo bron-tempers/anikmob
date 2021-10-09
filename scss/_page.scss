@@ -410,6 +410,10 @@
             flex-flow: column;
             align-items: center;
         }
+
+        @media (max-width: 576px) {
+            padding: 3rem 3rem 5rem;
+        }
     }
 
     &__picture {
@@ -419,6 +423,10 @@
         
         @media (max-width: 992px) {
             order: 3;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
         }
     }
 
@@ -521,6 +529,11 @@
     grid-template-rows: auto auto auto;
     grid-gap: 4rem;
     justify-items: center;
+
+    @media (max-width: 650px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
 }
 
 .feature-card {
@@ -708,6 +721,7 @@
 
         @media (max-width: 880px) {
             flex-flow: column;
+            gap: 5rem;
         }
     }
 }
@@ -724,6 +738,12 @@
 
         @media (max-width: 880px) {
             flex-flow: row;
+            gap: 3rem;
+        }
+
+        @media (max-width: 576px) {
+            flex-flow: column;
+            gap: 2rem;
         }
     }
 
@@ -732,6 +752,11 @@
         height: 26.1rem;
 
         margin-bottom: 3.5rem;
+
+        @media (max-width: 880px) {
+            margin-bottom: 0;
+            flex: 1 0 40%;
+        }
     }
 
     &__image {
@@ -792,10 +817,20 @@
             max-width: 100%;
             padding: 0 3rem;
         }
+
+        @media (max-width: 800px) {
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+        }
+        
     }
 
     &__text-content {
         max-width: 34rem;
+
+        align-self: flex-start;
         
     }
 
@@ -824,6 +859,18 @@
     display: flex;
     align-items: flex-start;
     gap: 8rem;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    @media (max-width: 520px) {
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 5rem;
+    }
 
     &__col-title {
         margin-bottom: 3rem;
